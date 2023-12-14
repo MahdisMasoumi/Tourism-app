@@ -1,0 +1,24 @@
+<div class="margin">
+  <h2>Egyptian Cities and Tourist Attractions</h2>
+  <div class="row">
+    <ng-container *ngFor="let city of cities">
+      <div class="col-sm-6">
+        <div [ngClass]="{ 'green-text': color, 'black-text': !color }">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">{{ city.name }}</h3>
+              <ul class="list-group list-group-flush">
+                <li
+                  *ngFor="let attraction of city.attractionSites"
+                  class="list-group-item"
+                >
+                  {{ attraction }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

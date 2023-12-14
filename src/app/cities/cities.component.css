@@ -1,0 +1,22 @@
+.green-text {
+  color: green;
+}
+
+.black-text {
+  color: black;
+}
+
+.margin {
+  margin-top: 10rem;
+}
+h2 {
+  padding: 2rem 2rem;
+  text-align: center;
+  color: rgb(67, 102, 67);
+  border-bottom: 1px solid rgb(118, 129, 104);
+}
+.card {
+  text-align: center;
+  margin-top: 2rem;
+  border: 1rem solid rgba(90, 174, 77, 0.3);
+}

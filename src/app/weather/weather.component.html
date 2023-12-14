@@ -1,0 +1,29 @@
+<div class="row margin">
+  <div *ngFor="let weather of citiesWeather" class="col-sm-6 mb-3">
+    <div class="card mb-3 text-center">
+      <div class="card-body">
+        <h2 class="card-title">{{ weather.name }}</h2>
+
+        <p class="card pa" style="background-color: rgb(237, 225, 247)">
+          Spring Night: {{ weather.springN }}°C<br />
+          Morning: {{ weather.springM }}°C
+        </p>
+        <p class="card pa" style="background-color: rgb(237, 225, 247)">
+          Summer Night: {{ weather.summerN }}°C<br />
+          Morning: {{ weather.summerM }}°C
+        </p>
+        <p class="card pa" style="background-color: rgb(237, 225, 247)">
+          Winter Night: {{ weather.winterN }}°C<br />
+          Morning: {{ weather.winterM }}°C
+        </p>
+        <p class="card pa" style="background-color: rgb(237, 225, 247)">
+          Autumn Night: {{ weather.autumnN }}°C<br />
+          Morning: {{ weather.autumnM }}°C
+        </p>
+        <p class="card pa" style="background-color: rgb(237, 225, 247)">
+          Best time to visit: {{ weather.visitFrom }} - {{ weather.visitTo }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
